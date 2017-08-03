@@ -1,8 +1,5 @@
  (function() {
-     function playSong() {
-        currentBuzzObject.play();
-        song.playing = true;
-     };
+
      function SongPlayer() {
          var SongPlayer = {};
          var currentSong = null;
@@ -11,6 +8,7 @@
  * @type {Object}
  */
          var currentBuzzObject = null;
+
 /**
  * @function setSong
  * @desc Stops currently playing song and loads new audio file as currentBuzzObject
@@ -27,6 +25,11 @@
 		    });
 		    currentSong = song;
 		 };
+
+      function playSong() {
+        currentBuzzObject.play();
+        song.playing = true;
+     };
 /*@method play plays song
 @ desc if the current song is not the selected song, set song to the selected song, play the song, register it as playing. 
 if that isnt the case and the song is paused, play it after*/
