@@ -86,6 +86,10 @@
                  playSong(song);
              }
          };
+         SongPlayer.title = function() {
+            
+            return currentAlbum.songs.title[currentSongIndex];
+         }
          
 
 

@@ -33,9 +33,7 @@
 	             };
 
 	             scope.thumbStyle = function() {
-     	             var percent = calculatePercent(seekBar, event);
-                	 scope.value = percent * scope.max;
-                  	 return scope.value;
+     	             return {left: percentString()};
 	             };
 
                  scope.onClickSeekBar = function(event) {
