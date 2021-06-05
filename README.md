@@ -44,6 +44,12 @@ Install the project dependencies by running:
 ```
 $ npm install
 ```
+If you receive error EAI_AGAIN, enter the following code block:
+
+...
+$ npm config rm proxy 
+$ npm config rm https-proxy --tried removing npm proxy 
+...
 
 ## Run the Application
 
